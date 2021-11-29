@@ -1,0 +1,27 @@
+$TTL 86400
+@   IN  SOA     ns1.thisislocal.local. admin.thisislocal.local. (
+                                              2021112901  ;Serial
+                                              3600        ;Refresh
+                                              1800        ;Retry
+                                              604800      ;Expire
+                                              86400       ;Minimum TTL
+)
+;Name Server Information
+        IN  NS      ns1.thisislocal.local.
+        IN  NS       ns2.thisislocal.local.
+;A - Record HostName To Ip Address
+ns1     IN  A       10.10.0.3
+ns2     IN  A       10.10.0.4
+www     IN  A       10.10.0.6
+db      IN  A       10.10.0.5
+router  IN  A       10.10.0.2
+jump    IN  A       10.10.0.128
+
+;CNAME record
+intra     IN CNAME        www.thisislocal.local.
+blog      IN CNAME        www.thisislocal.local.
+
+
+
+
+
