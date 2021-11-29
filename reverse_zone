@@ -1,0 +1,19 @@
+$TTL 86400
+@   IN  SOA     ns1.thisislocal.local. thisislocal.local. (
+                                              2021112901  ;Serial
+                                              3600        ;Refresh
+                                              1800        ;Retry
+                                              604800      ;Expire
+                                              86400       ;Minimum TTL
+)
+        ;Set Name Server
+         IN  NS         ns1.thisislocal.local.
+         IN  NS         ns2.thisislocal.local.
+        ;PTR records
+
+3       IN  PTR         ns1.thisislocal.local.
+4       IN  PTR         ns2.thisislocal.local.
+5       IN  PTR         db.thisislocal.local.
+6       IN  PTR         www.thisislocal.local.
+2       IN  PTR         router.thisislocal.local.
+128     IN  PTR         jump.thisislocal.local.
